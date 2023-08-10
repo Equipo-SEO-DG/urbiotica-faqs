@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.faqs .container {
+    padding: 90px;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.faqs .faqs__title {
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+    margin-bottom: 45px;
+    color: #80BCFF;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.faqs .faqs__item {
+    border-bottom: 1px solid rgba(122, 122, 122, 0.1);
+}
+
+.faqs .faqs__item .faqs__item__title {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 15px 10px;
+    cursor: pointer;
+    color: #0170b9;
+}
+
+.faqs .faqs__item .faqs__item__title i {
+    color: #0170b9;
+    font-size: 16px;
+    margin-right: 10px;
+    transform: rotate(-90deg);
+    transition: rotate .3s ease-in-out;
+}
+
+.faqs .faqs__item .faqs__item__title h3 {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+}
+.faqs .faqs__item[open] .faqs__item__title h3 {
+    color: #0170b9;
+    font-weight: 500;
+}
+.faqs .faqs__item .faqs__item__content {
+    padding: 10px 35px 25px;
+    margin: 0 auto;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.faqs .faqs__item[open] .faqs__item__title i {
+    transform: rotate(0);
+}
+
+@media screen and (max-width: 768px) {
+    .faqs .container {
+        padding: 45px 0;
+        max-width: 90%;
+    }
+    .faqs .faqs__title {
+        font-size: 25px;
+    }
+    .faqs .faqs__item .faqs__item__title i {
+        font-size: 16px;
+    }
+    .faqs .faqs__item .faqs__item__title h3 {
+        font-size: 20px;
+    }
+    .faqs .faqs__item .faqs__item__content {
+        font-size: 14px;
+    }    
+}
